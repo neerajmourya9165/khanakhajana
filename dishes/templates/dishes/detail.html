@@ -1,0 +1,6 @@
+<h1>{{ dish.thali_name }}</h1>
+<ul>
+{% for choice in kab_banaya.choice_set.all %}
+    <li>{{ choice.thali_name }}</li>
+{% endfor %}
+</ul>
